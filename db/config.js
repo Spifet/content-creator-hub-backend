@@ -1,8 +1,9 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 async function initDbConnection() {
   await mongoose.connect(
-    process.env.MONGO_URI || 'mongodb://localhost:27017/end-project'
+    process.env.MONGO_URI ||
+      "mongodb+srv://JLA:AdminJLA@jla.efjgg44.mongodb.net/?retryWrites=true&w=majority"
   );
 }
 
